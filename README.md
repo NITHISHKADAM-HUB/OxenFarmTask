@@ -13,8 +13,8 @@ Instructions:
 
      CLOUDINARY_SECRET=your cloudinary_secret
 
- 4.run 'npm run dev' on terminal to start.
+ 4. run 'npm run dev' on terminal to start.
 
- 5.type http://localhost:3050 on your browser to begin.
+ 5. type http://localhost:3050 on your browser to begin.
 
 
