@@ -22,7 +22,7 @@
             <h1 class="mt-4">Dashboard</h1>
             <p class="lead mb-3">Welcome: <%= user.name %> </p>
             <form action="/users/images" method="POST" enctype="multipart/form-data">
-                <input type="file" name="image" id="image" multiple>
+                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" multiple>
                 <div class="mb-3">
                     <button class="btn btn-success mt-4">Add Image</button>
                 </div>
