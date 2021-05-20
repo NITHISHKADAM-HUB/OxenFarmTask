@@ -1,12 +1,11 @@
 # OxenFarmTask
 
 Instructions:
+1. run 'npm install' to install all the dependencies.
 
-run 'npm install' to install all the dependencies.
+2. create a cloudinary account and copy credentials
 
-1. create a cloudinary account and copy credentials
-
-2. create .env file and add credentials like
+3. create .env file and add credentials like
 
      CLOUDINARY_CLOUD_NAME=your cloudinary_cloud_name
 
@@ -14,6 +13,8 @@ run 'npm install' to install all the dependencies.
 
      CLOUDINARY_SECRET=your cloudinary_secret
 
-3.run 'npm run dev' on terminal to start.
+ 4.run 'npm run dev' on terminal to start.
 
-4.type http://localhost:3050 on your browser to begin.
+ 5.type http://localhost:3050 on your browser to begin.
+
+
