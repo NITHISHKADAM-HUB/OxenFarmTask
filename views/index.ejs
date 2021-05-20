@@ -22,7 +22,8 @@
             <h1 class="mt-4">Dashboard</h1>
             <p class="lead mb-3">Welcome: <%= user.name %> </p>
             <form action="/users/images" method="POST" enctype="multipart/form-data">
-                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" multiple>
+                <input type="file" name="image" id="image" multiple>
+                <span style="color: red; display:block; margin-top: 10px;"></span>
                 <div class="mb-3">
                     <button class="btn btn-success mt-4">Add Image</button>
                 </div>
@@ -42,5 +43,22 @@
 
 
 </body>
+<script>
+    let input = document.querySelector('input');
+    let span = document.querySelector('span');
+
+    input.addEventListener('change', () => {
+        let files = input.files;
+
+        if (files.length > 0) {
+            if (files[0].size > 500 * 1024) {
+                span.innerText = 'File Size Exceeds 500kb';
+                return;
+            }
+        }
+
+        span.innerText = '';
+    });
+</script>
 
 </html>
