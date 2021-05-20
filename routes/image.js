@@ -3,7 +3,7 @@ const User = require('../models/User');
 const multer = require('multer');
 const { storage } = require('../cloudinary');
 const cloudinary = require('../cloudinary');
-const upload = multer({ storage });
+const upload = multer({ storage: storage, limits: { fileSize: 500000 } });
 const { checkAuthenticated } = require('../config/auth');
 const router = express.Router()
 
